@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         Player selectedPlayer = (Player) listItem.getTag();
 
-        Log.d("MainActivity", selectedPlayer.getName());
-
         Intent intent = new Intent(this, PlayerActivity.class);
         intent.putExtra("player", selectedPlayer);
+
+        Log.d("MainActivity", selectedPlayer.getName());
 
         startActivity(intent);
 
