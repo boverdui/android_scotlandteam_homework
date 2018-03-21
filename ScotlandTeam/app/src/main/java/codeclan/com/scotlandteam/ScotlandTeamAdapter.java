@@ -29,20 +29,14 @@ public class ScotlandTeamAdapter extends ArrayAdapter<Player> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.player_item, parent, false);
         }
 
-        TextView number = listItemView.findViewById(R.id.number);
+        TextView number = listItemView.findViewById(R.id.number_text_view);
         number.setText(currentPlayer.getNumber().toString());
 
-        ImageView image = listItemView.findViewById(R.id.image);
+        ImageView image = listItemView.findViewById(R.id.image_image_view);
         image.setImageResource(currentPlayer.getImage());
 
-        TextView name = listItemView.findViewById(R.id.name);
+        TextView name = listItemView.findViewById(R.id.name_text_view);
         name.setText(currentPlayer.getName());
-
-        TextView playingPosition = listItemView.findViewById(R.id.playingPosition);
-        playingPosition.setText(currentPlayer.getPlayingPosition());
-
-        TextView caps = listItemView.findViewById(R.id.caps);
-        caps.setText(currentPlayer.getCaps().toString() + " caps");
 
         listItemView.setTag(currentPlayer);
 

@@ -3,7 +3,6 @@ package codeclan.com.scotlandteam;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
@@ -33,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, PlayerActivity.class);
         intent.putExtra("player", selectedPlayer);
-
-        Log.d("MainActivity", selectedPlayer.getName());
 
         startActivity(intent);
 
